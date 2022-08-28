@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+
+{% for item in music %}
+    <div>
+    <p>{{ item.title}}</p>
+    <p>{{ item.mus_file}}</p>
+    <p>{{ item.like }}</p>
+    <p>{{ item.is_published }}</p>
+
+    </div>
+{% endfor %}
+</body>
+</html>
